@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<title>Web Components Playground</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<template id="clock-template">
+		<style>
+			.clock-component {
+				font-size: 20px;
+			}
+			#hours {
+				color: royalblue;
+			}
+			#minutes {
+				color: rosybrown;
+			}
+			#seconds {
+				color: green
+			}
+		</style>
+		<div class="clock-component">
+			<div>The current time is: </div>
+			<div>
+				<span id="hours"></span>:
+				<span id="minutes"></span>:
+				<span id="seconds"></span>
+			</div>
+		</div>
+	</template>
+	<script src="src/ClockComponent.js"></script>
+	<div id="app">
+		<h1>Web Component Playground</h1>
+		<clock-component />
+	</div>
+</body>
+
+</html>
